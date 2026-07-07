@@ -1,47 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Roblox Radar</title>
+<meta charset="UTF-8">
+<title>Roblox Radar</title>
 
-    <style>
-        body{
-            margin:0;
-            background:#2f5f8f;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:100vh;
-            font-family:Arial;
-            color:white;
-        }
+<style>
+body{
+    margin:0;
+    background:#24476b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+}
 
-        #radar{
-            width:700px;
-            height:700px;
-            background:#345f86;
-            border-radius:15px;
-            position:relative;
-            overflow:hidden;
-            border:3px solid #6da9ff;
-        }
+canvas{
+    background:#315b82;
+    border:3px solid #7bb8ff;
+    border-radius:12px;
+}
+</style>
 
-        #title{
-            position:absolute;
-            top:15px;
-            left:20px;
-            font-size:28px;
-            font-weight:bold;
-        }
-    </style>
 </head>
-
 <body>
 
-<div id="radar">
-    <div id="title">
-        Roblox Radar
-    </div>
-</div>
+<canvas id="radar" width="700" height="700"></canvas>
 
 <script src="/socket.io/socket.io.js"></script>
 <script src="radar.js"></script>
